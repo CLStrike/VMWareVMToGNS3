@@ -1,0 +1,45 @@
+{
+  "name": "Windows",
+  "category": "guest",
+  "description": "This is an automatically generated file.",
+  "vendor_name": "none",
+  "vendor_url": "http://www.none.local/",
+  "documentation_url": "http://www.none.local/",
+  "product_name": "Windows",
+  "product_url": "https://www.microsoft.com/en-us/windows",
+  "registry_version": 4,
+  "status": "stable",
+  "availability": "free",
+  "maintainer": "none",
+  "maintainer_email": "none@none.local",
+  "usage": "This is an converted Virtual machine. (from VMWare to KVM). Please change hardware in GNS3 settings before launching VM.\n",
+  "symbol": "microsoft.svg",
+  "port_name_format": "NIC{port1}",
+  "qemu": {
+    "adapter_type": "e1000",
+    "adapters": 1,
+    "ram": 1024,
+    "hda_disk_interface": "sata",
+    "arch": "x86_64",
+    "console_type": "vnc",
+    "boot_priority": "c",
+    "kvm": "require"
+  },
+  "images": [
+    {
+      "filename": "default-vmdk-file",
+      "version": "1.0",
+      "md5sum": "63456b42eb8e184b3e7c675645a3c32c",
+      "filesize": 7293386240,
+      "download_url": "none"
+    }
+  ],
+  "versions": [
+    {
+      "name": "VMWare VM - Custom Appliance",
+      "images": {
+        "hda_disk_image": "default-vmdk-file"
+      }
+    }
+  ]
+}
